@@ -66,7 +66,7 @@
     <main>
       <section class="hero section hero-image">
         <div class="container">
-          <h1 class="hero-title">efektywne rozwiązania dla waszego biznesu</h1>
+          <h1 class="hero-title">efektywne rozwiązania Dla waszego biznesu</h1>
 
           <button type="button" class="hero-button" data-modal-open>
             Zamów usługę
@@ -508,14 +508,89 @@
               </li>
             </ul>
           </div>
+          <div class="footer-signup-form">
+            <h3 class="join-header-footer signup-header-footer">Zapisz się do newslettera</h3>
+            <div class="signup-section">
+              <form>
+                <label>
+                 <input class="signup-input" type="text" name="Email" placeholder="E-mail" />
+                </label>
+                <button type="submit" class="signup-button">Zapisz się
+                  <svg width="24px" height="24px" class="signup-icon">
+                    <use href="./images/icons/sprite.svg#icon-sendform"></use>
+                  </svg>
+                </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
+      
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           &#10006;
         </button>
+
+
+        <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="modal-form" autocomplete="off">
+          <label class="form-label" for="user-name">
+            <span class="label-text">Imie</span>
+            <div class="label-svg"><svg width="12px" height="12px" class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-avatar"></use>
+            </svg></div>
+            <input type="text" name="name" id="username" class="form-input" minlength="3" required/>
+          </label>
+
+          
+            <label class="form-label" for="phone-number">
+              <span class="label-text">Telefon</span>
+              <div class="label-svg"><svg width="13px" height="13px" class="modal-form-icon">
+                <use href="./images/icons/sprite.svg#icon-telephone"></use>
+              </svg></div>
+              <input type="tel" name="phone-number" id="phone-number" class="form-input" required/>
+              
+            </label>
+
+            
+              <label class="form-label" for="E-mail">
+                <span class="label-text">Email</span>
+                <div class="label-svg"><svg width="15px" height="12px" class="modal-form-icon">
+                  <use href="./images/icons/sprite.svg#icon-envelope1"></use>
+                </svg></div>
+                <input type="email" name="E-mail" id="email" class="form-input" required/>
+              </label>
+
+              <label class="form-label">
+                <span class="label-text">Komentarz</span>
+                <textarea name="feedback" rows="5" 
+                placeholder="Wprowadź tekst"  class="form-textarea">
+                </textarea>
+            
+
+                <label class="modal-checkbox">
+                    <input type="checkbox" name="terms-conditions" class="modal-terms"/>
+                    <svg width="16px" height="15px" class="modal-tick">
+                      <use href="./images/icons/sprite.svg#icon-tick"></use>
+                    </svg>
+    
+                    <svg width="16px" height="15px" class="modal-tick-box">
+                      <use href="./images/icons/sprite.svg#icon-tick-box"></use>
+                    </svg>
+
+                    <p><span class="text-space">Oświadczam, że akceptuję </span><a href="#" class="modal-link"> Regulamin </a> i <a href="#" class="modal-link"> Politykę Prywatności.</a></p>
+                  </label>
+             
+            
+          
+
+            <div class="modal-button-section"><button type="submit" class="modal-button">
+              Wyślij
+            </button></div>
+          
+        </form>
       </div>
     </div>
     <script src="../js/modal.js"></script>
