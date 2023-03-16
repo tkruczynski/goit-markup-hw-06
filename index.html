@@ -540,8 +540,9 @@
           &#10006;
         </button>
 
-        <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
         <form class="modal-form" autocomplete="off">
+          <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+
           <label class="form-label">
             <span class="label-text">Imie</span>
             <svg width="12px" height="12px" class="modal-form-icon">
@@ -582,11 +583,17 @@
             ></textarea>
           </label>
 
-          <label class="modal-checkbox">
+          <label class="modal-checkbox" for="checkbox"
+            ><span class="checkbox-text">
+              Oświadczam, że akceptuję
+              <a href="#" class="modal-link"> Regulamin </a> i
+              <a href="#" class="modal-link"> Politykę Prywatności.</a>
+            </span>
             <input
               type="checkbox"
               value="terms-conditions"
               class="modal-terms"
+              id="checkbox"
             />
             <svg width="16px" height="15px" class="modal-tick">
               <use href="./images/icons/sprite.svg#icon-tick"></use>
@@ -595,14 +602,6 @@
             <svg width="16px" height="15px" class="modal-tick-box">
               <use href="./images/icons/sprite.svg#icon-tick-box"></use>
             </svg>
-          </label>
-
-          <label class="checkbox-paragraf">
-            <span class="checkbox-text">
-              Oświadczam, że akceptuję
-              <a href="#" class="modal-link"> Regulamin </a> i
-              <a href="#" class="modal-link"> Politykę Prywatności.</a>
-            </span>
           </label>
 
           <div class="modal-button-section">
