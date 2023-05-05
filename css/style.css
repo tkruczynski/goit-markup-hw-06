@@ -590,6 +590,7 @@ footer {
   pointer-events: none;
 }
 .modal {
+  display: block;
   position: absolute;
   width: 528px;
   height: 581px;
