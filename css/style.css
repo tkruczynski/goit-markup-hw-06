@@ -615,6 +615,7 @@ footer {
 /* Modal box form styling */
 
 .modal-form {
+  display: block;
   padding: 40px;
 }
 .modal-header {
